@@ -78,6 +78,7 @@ namespace OneTimePasswordConsoleApp
             DateTime dateTime = DateTime.Now;
             string message = userId + "#" + dateTime;
             oneTimePassword = cryptographyService.Encrypt(message);
+            Console.WriteLine("One-Time Password:");
             Console.WriteLine(oneTimePassword);
         }
     }
